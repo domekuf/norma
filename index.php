@@ -26,8 +26,8 @@ user-select: none;
 <div class="container">
 	<h1>Associazione Norma</h1>
 		<div class="well" id="menu">
-		<?
-		include('lib/menu.php');
+		<?php
+		include('/lib/menu.php');
 		?>
 			<a dest="container" meth="GET" class="btn btn-primary" href="http://www.google.com">Registrati</a>
 		</div>

@@ -1,4 +1,4 @@
-<?
+<?php
 $nomecartella='./Menu';
 $d = dir($nomecartella);
 while (false !== ($entry = $d->read())) {
