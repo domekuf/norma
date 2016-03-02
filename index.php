@@ -44,5 +44,6 @@ user-select: none;
 <script>
 	ajax_setup();
 </script>
+<script src="js/cod_fiscale.js"></script>
 </body>
 
