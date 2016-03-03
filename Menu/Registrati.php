@@ -47,12 +47,6 @@
    </div>
 </div>
 
-<div class="form-group row">
-   <div class="col-sm-offset-2 col-sm-10">
-      <button  type="submit" id="cf2" class="btn btn-secondary">Calcola Codice Fiscale</button>
-   </div>
-</div>
-<a href="Menu/Registrati.php"  onmouseover="ajax_setup()" dest="cont2" meth="GET"> asdasd</a>
 <div id="cont2">
 </div>
 </form>

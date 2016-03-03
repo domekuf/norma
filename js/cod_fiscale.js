@@ -18,11 +18,16 @@ cfQs='http://webservices.dotnethell.it/codicefiscale.asmx/CalcolaCodiceFiscale?N
 $.ajax({
       type: "POST",
       url: cfUrl,
-      data: formData,//"Nome=Domenico&Cognome=Di+Iorio&DataNascita=26%2F04%2F1991&ComuneNascita=Castel+San+Giovanni&Sesso=M",
+      data: form.serialize(),//"Nome=Domenico&Cognome=Di+Iorio&DataNascita=26%2F04%2F1991&ComuneNascita=Castel+San+Giovanni&Sesso=M",
       dataType: "html",
       success: function(msg)
       {
-        console.log(msg);
+		var xml = msg,
+		xmlDoc = $.parseXML( xml ),
+		$xml = $( xmlDoc ),
+		$string = $xml.find( "string" );
+        //console.log($string.text());
+		$('#codicefiscale').val($string.text());
       },
       error: function()
       {
