@@ -61,8 +61,8 @@ console.log(form);
 }
 //form $//Nome=string&Cognome=string&ComuneNascita=string&DataNascita=string&Sesso=string
 </script>
-<?php
-for($i=0;$i<1000;$i++){
-	$j=($i*$i);
+<?
+for($i=0;$i<100000;$i++){
+	$j=$i*$i;
 }
 ?>
