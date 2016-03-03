@@ -29,7 +29,7 @@ user-select: none;
 		<?php
 		include('/lib/menu.php');
 		?>
-			<a dest="container" meth="GET" class="btn btn-primary" href="http://www.google.com">Registrati</a>
+			<a dest="container" meth="POST" class="btn btn-primary" href="http://www.google.com">Registrati</a>
 		</div>
 		<div class="panel-body">
 			<div id="container">
