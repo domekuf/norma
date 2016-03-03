@@ -23,12 +23,10 @@ $("a").click(
         $.ajax({
 		type: meth,
 		url: href,
-		//data: '',//form.serialize(),//"Nome=Domenico&Cognome=Di+Iorio&DataNascita=26%2F04%2F1991&ComuneNascita=Castel+San+Giovanni&Sesso=M",
+		data: '',//form.serialize(),//"Nome=Domenico&Cognome=Di+Iorio&DataNascita=26%2F04%2F1991&ComuneNascita=Castel+San+Giovanni&Sesso=M",
 		dataType: "html",
 		success: function(msg)
 		{
-			//console.log(msg);
-			//console.log(container);
 			$('#'+container).html(msg);
 		},
 		error: function()
@@ -36,16 +34,5 @@ $("a").click(
 			alert("Chiamata fallita, si prega di riprovare...");
 		}
 		});
-		
-		//xhttp.onreadystatechange = function() {
-  		//	if (xhttp.readyState == 4 && xhttp.status == 200) {
-    	//		document.getElementById(container).innerHTML = xhttp.responseText;
-    	//		console.log(xhttp);
-  		//	}else if (xhttp.status == 404){
-  		//		document.getElementById(container).innerHTML = '<div class="row" style="text-align:center"><h2><i class="fa fa-frown-o fa-spin"></i> Oops!</h2><p> Qualcosa é andato storto, si chiama '+xhttp.status+'!</p></div>';
-  		//	}
-		//};
-        //xhttp.open(meth, href, true);
-		//xhttp.send();
 	});
 }
