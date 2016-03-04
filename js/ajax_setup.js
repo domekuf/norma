@@ -29,9 +29,10 @@ $("a").click(
 		{
 			$('#'+container).html(msg);
 		},
-		error: function()
+		error: function(msg)
 		{
-			alert("Chiamata fallita, si prega di riprovare...");
+			console.log(msg);
+			$('#'+container).html('<div class="row" style="text-align:center"><h2><i class="fa fa-frown-o fa-spin"></i> Oops!</h2><p> Qualcosa é andato storto e si chiama: '+msg.status+'! Ti dice qualcosa? </p></div>');
 		}
 		});
 	});
